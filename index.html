@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+    <link rel="stylesheet" href="./main.css">  
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas Usando jquery</h1>
+        <form>
+            <input type="text" placeholder="Nome da tarefa" id="input-tarefa">
+            <label for="feito">Feito</label>
+            <input type="checkbox" id="feito">
+            <button>+</button>
+        </form>        
+    </header>
+    <main>
+        <ul>
+            <li class="feito">compras no supermercado <span>Feito</span></li>
+            <hr>
+            <li class="nao-feito">compras no supermercado <span>A fazer</span></li>
+            <hr>
+            <li>compras no supermercado <span>Feito</span></li>
+            <hr>           
+        </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>  
+</body>
+</html>
