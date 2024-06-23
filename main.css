@@ -22,6 +22,7 @@ input, label{
     font-size: 20px;
     border-radius: 12px;
     vertical-align: middle;
+    padding: 4px;
 }
 input[type=checkbox] {
     
