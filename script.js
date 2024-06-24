@@ -8,7 +8,7 @@ $(document).ready(() => {
       let feito = $('#feito').is(':checked');
 
       
-      if (tarefas.includes(tarefaNome.value)) {
+      if (tarefas.includes(tarefaNome)) {
          alert('Tarefa ja inserida');
       }
       else {
@@ -23,10 +23,10 @@ $(document).ready(() => {
          tarefaItem.append(' ').append(statusSpan);
 
          $('#lista-tarefas').append(tarefaItem).append('<hr>');
-
+         tarefas.push(tarefaNome);
          $('#input-tarefa').val('');
          $('#feito').prop('checked', false);
-         tarefas.push(tarefaNome.value);
+         
       }
 
    })
