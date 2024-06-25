@@ -30,5 +30,14 @@ $(document).ready(() => {
       }
 
    })
+   $('#lista-tarefas').on('click', 'li', function() {
+      if ($(this).hasClass('feito')) {
+         $(this).removeClass('feito').addClass('nao-feito');
+         $(this).find('span').text(' ❌');
+      } else {
+         $(this).removeClass('nao-feito').addClass('feito');
+         $(this).find('span').text(' ✔️');
+      }
+   })
 
 })
